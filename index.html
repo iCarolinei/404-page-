@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page d'erreur 404</title>
+<link rel="stylesheet" href="style.css"/>
+
+</head>
+<body>
+<div id="animation_nicky"></div>
+<div id="animation_laura"></div>
+<div id="boum"></div>
+<section class="content">
+    <header><h1>Oupsi! 404 ERROR</h1></header><br/>
+    <section><p><i>Nicky Larson ne craint personne...</i></p></section>
+    <!-- <nav><p><a href="https://icarolinei.github.io/markdown-warmup-html/">Surtout quand la fille est mignonne</a></p></nav> -->
+    <a href="https://icarolinei.github.io/markdown-warmup-html/" target="_blank"><button>Surtout quand la fille est mignonne</button></a>
+</section>
+
+
+<script>
+
+    var x = document.getElementById("animation_laura");
+    var boum = document.getElementById("boum");
+
+    x.addEventListener("webkitAnimationEnd", animationlauraEnd);
+    x.addEventListener("animationend", animationlauraEnd);
+
+    function animationlauraEnd() {
+        document.body.style.backgroundImage = "url('boum.gif')";
+    // boum.style.visibility = 'visible';
+}
+</script>
+</body>
+</html>

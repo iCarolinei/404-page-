@@ -1,0 +1,86 @@
+body {
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+
+     
+}
+
+header {
+    font-size: 30px;
+}
+
+section { 
+    font-size: 25px;
+
+}
+
+button {
+    background-color: purple;
+    border-radius: 5px;
+    border-style: solid;
+    color: white;
+    font-size: large;
+    font-weight: bolder;
+    height: 100px;
+    width: 200px;
+    cursor: pointer;
+    position: relative;
+    left: 200px;
+  
+}
+.content
+{
+    position: absolute;
+    left:600px;
+    top: 250px;
+    width: 600px;
+    height: 400px;
+
+    padding: 20px 20px 20px 20px;
+    background-color:#DCDCDC;
+    opacity: 0.9;
+}
+
+@keyframes nicky {
+    0%   { left:1600px; top:700px; visibility: visible;}
+    30%   { left:1100px; top:700px;}
+    100%  { left:300px; top:700px; visibility: hidden;}
+  
+  }
+  @keyframes laura {
+    0%   { left:2500px; top:700px; visibility: visible;}
+    30%   { left:1300px; top:700px;}
+    100%  { left:500px; top:700px; visibility: hidden;}
+  
+  }
+
+  #animation_nicky {
+      background-image: url('nicky_running.png');
+    width: 195px;
+    height: 210px;
+    visibility: hidden;
+    position: absolute;
+    animation-name: nicky;
+    animation-duration: 12s;
+    animation-iteration-count: 1;
+  }
+  #animation_laura {
+    background-image: url('laura_running.png');
+  width: 242px;
+  height: 187px;
+  visibility: hidden;
+  position: absolute;
+  animation-name: laura;
+  animation-duration: 12s;
+  animation-iteration-count: 1;
+}
+#boum {
+    background-image: url('boum.gif');
+  width: 400px;
+  height: 300px;
+  left: 0px;
+  top:700px;
+  visibility: hidden;
+  position: absolute;
+
+}
